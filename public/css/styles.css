@@ -1,0 +1,64 @@
+
+@font-face {
+    font-family: starwars;
+    src: local("starwars"), url(../fonts/STARWARS.TTF);
+    font-weight: bold;
+  }
+  
+  html {
+      height: auto;
+      font-family: starwars;
+  }
+  
+  body {
+    width: 100%;
+    height: auto;
+    padding: 1%;
+    background-image: url(../img/fondoStarWars.jpg);
+    background-position: center;
+    font-family: starwars;
+  }
+  
+  .table-dark {
+      color: #fff;
+      background-color: #212529;
+      margin: 3%;
+  }
+  
+  
+    #background1 {
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+    
+    #background2 {
+      z-index: 2;
+      position: absolute;
+      left: 0;
+      width: 100%;
+    }
+    
+    #background3 {
+      z-index: 3;
+      position: absolute;
+      left: 0;
+      width: 100%;
+    }
+  
+    .b8b {
+      width: 300px;
+      margin-left: 100px;
+    }
+  
+  .logo-img {
+      width: 60%;
+      margin: auto;
+    }
+  
+    .parallaxText-img {
+      width: 100%;
+    }
+    
