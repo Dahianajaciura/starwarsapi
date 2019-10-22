@@ -1,8 +1,10 @@
 import crossroads from 'crossroads'
 import homeController from './controllers/homeController.js'
 import peopleController from './controllers/peopleController.js'
-import localStorageController from './controllers/localStorageController.js'
+//import localStorageController from './controllers/localStorageController.js'
 import contactController from './controllers/contactController.js'
+import showSaved from './utils/showSaved.js'
+
 
 function router () {
   crossroads.addRoute('', function () {
@@ -15,9 +17,9 @@ function router () {
     $('#root').load('./partials/people.html', peopleController)
   })
 
-  crossroads.addRoute('#/localStorage', function () {
+  crossroads.addRoute('#/local-storage', function () {
     console.log('localStorage')
-    $('#root').load('./partials/local-storage.html', localStorageController)
+    $('#root').load('./partials/local-storage.html', showSaved)
   })
 
   crossroads.addRoute('#/contact', function () {
