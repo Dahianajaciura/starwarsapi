@@ -2,7 +2,6 @@
   var firstNameInputNode = $('#firstName');
   var emailInputNode = $('#email');
   var commentsInputNode = $('#comments');
-  var submitButtonNode = $('#submitButton');
 
   firstNameInputNode.one('blur', validateEmtpyField);
   emailInputNode.one('blur', validateEmailField);
@@ -78,11 +77,10 @@
 
   function validateButton () {
     var validInputNodes = $('.is-valid');
+    console.log(validInputNodes)
 
     if (validInputNodes.length === 3) {
-      submitButtonNode.attr('disabled', false)
-    } else {
-      submitButtonNode.attr('disabled', true)
+      $('#submitButton').attr('disabled', false)
     }
   }
 

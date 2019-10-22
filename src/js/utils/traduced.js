@@ -1,94 +1,92 @@
 export default function traduced(character) {
- 
- 
-// traducir el color de ojos
+  // traducir el color de ojos
   let eye_color = character.eye_color;
 
   switch (eye_color) {
     case "blue":
-      return (character.eye_color = "azul");
-
+      character.eye_color = "azul";
+      break;
     case "yellow":
-      return (character.eye_color = "amarillo");
-
+      character.eye_color = "amarillo";
+      break;
     case "red":
-      return (character.eye_color = "rojo");
-
+      character.eye_color = "rojo";
+      break;
     case "brown":
-      return (character.eye_color = "marron");
-
+      character.eye_color = "marron";
+      break;
     case "blue-gray":
-      return (character.eye_color = "azul grisaceo");
-
+      character.eye_color = "azul grisaceo";
+      break;
     case "black":
-      return (character.eye_color = "negro");
-
+      character.eye_color = "negro";
+      break;
     case "orange":
-      return (character.eye_color = "naranja");
-
+      character.eye_color = "naranja";
+      break;
     case "hazel":
-      return (character.eye_color = "avellana");
-
+      character.eye_color = "avellana";
+      break;
     case "pink":
-      return (character.eye_color = "rosa");
-
+      character.eye_color = "rosa";
+      break;
     case "unknown":
-      return (character.eye_color = "indefinido");
-
+      character.eye_color = "indefinido";
+      break;
     case "red, blue":
-      return (character.eye_color = "rojo azulado");
-
+      character.eye_color = "rojo azulado";
+      break;
     case "gold":
-      return (character.eye_color = "dorado");
-
+      character.eye_color = "dorado";
+      break;
     case "green, yellow":
-      return (character.eye_color = "verde amarillento");
-
+      character.eye_color = "verde amarillento";
+      break;
     case "white":
-      return (character.eye_color = "blanco");
-
+      character.eye_color = "blanco";
+      break;
     case "dark":
-      return (character.eye_color = "oscuro");
+      character.eye_color = "oscuro";
     default:
       break;
   }
- 
-// traducir el peso
 
-/* let mass = character.mass;
+  // traducir el peso
+
+  let mass = character.mass;
   switch (mass) {
     case "unknown":
-      return (character.mass = "indefinido");
-
+      character.mass = "indefinido";
+      break;
     default:
-      character.mass = "kg";
+      character.mass = character.mass + " kg";
       break;
   }
 
   // traducir la altura
-let height = character.height;
+  let height = character.height;
   switch (height) {
     case "unknown":
-      return (height = "indefinido");
+      character.height = "indefinido";
 
     default:
-      height = "cm";
+      character.height = character.height + " cm";
   }
 
-// traducir el sexo
+  // traducir el sexo
 
-let gender = character.gender;
+  let gender = character.gender;
   switch (gender) {
     case "female":
-      return (gender = "femenino");
-
+      character.gender = "femenino";
+      break;
     case "male":
-      return (gender = "masculino");
-
+      character.gender = "masculino";
+      break;
     case "n/a":
-      return (gender = "indefinido");
-
+      character.gender = "indefinido";
+      break;
     case "hermaphrodite":
-      return (gender = "hermafrodita");
-  }  */
+      character.gender = "hermafrodita";
+  }
 }

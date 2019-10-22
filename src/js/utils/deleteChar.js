@@ -1,20 +1,32 @@
-import { getLocalList } from "./localStorage";
+import { getLocalList, setLocalList } from "./localStorage";
 export default function deleteChar() {
   $(".deleteChar").on("click", function() {
     console.log("bien, hiciste click");
     var listSaveChar = getLocalList("charactersRecived");
-    var charLocal = listSaveChar.id;
-    console.log(charLocal);
+    // console.log(charLocal);
+    let position = $(this)
+      .parent()
+      .prev()
+      .prev()
+      .prev()
+      .prev()
+      .prev()
+      .prev()
+      .text();
+    console.log(position);
     for (let index = 0; index < listSaveChar.length; index++) {
-      const listChar = listSaveChar[index];
-      console.log(listChar);
+      var charLocal = listSaveChar[index].id;
+      // const listChar = listSaveChar[index];
 
-      var rowChar = listChar.id;
-      console.log(rowChar);
-
-      if (rowChar == charLocal) {
-        listChar.splice(index,1)
-        setLocalList('charactersRecived', listSaveChar)
+      if (charLocal == position) {
+        console.log("lo encontramos");
+        listSaveChar.splice(index, 1);
+        console.log(index);
+        setLocalList("charactersRecived", listSaveChar);
+        $(this)
+          .parent()
+          .parent()
+          .hide();
       }
     }
   });
