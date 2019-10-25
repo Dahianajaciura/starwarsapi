@@ -6,8 +6,7 @@ export default function searchChar(_id) {
     var charSaved = listSaveChar[i].id;
 
     if (charSaved == _id) {
-      console.log("lo encontre");
-      return true
+      return true;
     }
   }
 }

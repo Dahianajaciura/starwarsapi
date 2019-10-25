@@ -4,49 +4,49 @@ export default function traduced(character) {
 
   switch (eye_color) {
     case "blue":
-      character.eye_color = "azul";
+      character.eye_color = "Azul";
       break;
     case "yellow":
-      character.eye_color = "amarillo";
+      character.eye_color = "Amarillo";
       break;
     case "red":
-      character.eye_color = "rojo";
+      character.eye_color = "Rojo";
       break;
     case "brown":
-      character.eye_color = "marron";
+      character.eye_color = "Marrón";
       break;
     case "blue-gray":
-      character.eye_color = "azul grisaceo";
+      character.eye_color = "Azul grisáceo";
       break;
     case "black":
-      character.eye_color = "negro";
+      character.eye_color = "Negro";
       break;
     case "orange":
       character.eye_color = "naranja";
       break;
     case "hazel":
-      character.eye_color = "avellana";
+      character.eye_color = "Avellana";
       break;
     case "pink":
-      character.eye_color = "rosa";
+      character.eye_color = "Rosa";
       break;
     case "unknown":
-      character.eye_color = "indefinido";
+      character.eye_color = "Indefinido";
       break;
     case "red, blue":
-      character.eye_color = "rojo azulado";
+      character.eye_color = "Rojo Azulado";
       break;
     case "gold":
-      character.eye_color = "dorado";
+      character.eye_color = "Dorado";
       break;
     case "green, yellow":
-      character.eye_color = "verde amarillento";
+      character.eye_color = "Verde Amarillento";
       break;
     case "white":
-      character.eye_color = "blanco";
+      character.eye_color = "Blanco";
       break;
     case "dark":
-      character.eye_color = "oscuro";
+      character.eye_color = "Oscuro";
     default:
       break;
   }
@@ -56,7 +56,7 @@ export default function traduced(character) {
   let mass = character.mass;
   switch (mass) {
     case "unknown":
-      character.mass = "indefinido";
+      character.mass = "Indefinido";
       break;
     default:
       character.mass = character.mass + " kg";
@@ -78,15 +78,15 @@ export default function traduced(character) {
   let gender = character.gender;
   switch (gender) {
     case "female":
-      character.gender = "femenino";
+      character.gender = "Femenino";
       break;
     case "male":
-      character.gender = "masculino";
+      character.gender = "Masculino";
       break;
     case "n/a":
-      character.gender = "indefinido";
+      character.gender = "Indefinido";
       break;
     case "hermaphrodite":
-      character.gender = "hermafrodita";
+      character.gender = "Hermafrodita";
   }
 }

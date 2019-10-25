@@ -5,7 +5,6 @@
 }
 
 * {
-
   font-family: starwars;
 }
 
@@ -34,45 +33,31 @@ body {
   margin: 3%;
 }
 
-#background1 {
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+.logo-img img {
+  height: 600px;
 }
 
-#background2 {
-  z-index: 2;
-  position: absolute;
-  left: 0;
-  width: 100%;
+.bienvenido {
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  padding-top: 10%;
+}
+.jaciura a {
+  color: yellow;
+  font-size: 20px;
+}
+.jaciura a:hover {
+  color: white;
+  font-size: 20px;
+}
+.jaciura {
+  text-align: center;
+}
+.tablacontenedor{
+  padding: 5%;
 }
 
-#background3 {
-  z-index: 3;
-  position: absolute;
-  left: 0;
-  width: 100%;
-}
-
-.b8b {
-  width: 300px;
-  float: left;
-  padding-top: 5%;
-}
-
-.darthVader {
-  width: 100px;
-  float: right;
-  padding: 10%;
-}
-
-.logo-img {
-  width: 60%;
-  margin: auto;
-}
-
-.parallaxText-img {
-  width: 100%;
+button .saveChar{
+  background-color:red ;
 }

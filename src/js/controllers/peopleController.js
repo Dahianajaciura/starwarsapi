@@ -22,14 +22,10 @@ export function showResults(_peopleData) {
       const id = results[index].url.slice(28, -1);
 
       let buscar = searchChar(id);
-      console.log(id);
 
       if (!buscar) {
-        console.log("aca estaba!");
-
         var elementTraduced = results[index];
         traduced(elementTraduced);
-        console.log(elementTraduced.eye_color);
 
         let position = $("<td>").text(results[index].url.slice(28, -1));
         let name = $("<td>").text(results[index].name);
@@ -39,8 +35,9 @@ export function showResults(_peopleData) {
         let eye_color = $("<td>").text(results[index].eye_color);
         let buttonSave = $("<td>").append(
           $("<button>")
-            .text("guardar")
-            .attr("class", "saveChar")
+            .text("Guardar")
+            .attr("class","saveChar")
+            .addClass("btn btn-success")
         );
 
         let file = $("<tr>").append(
@@ -55,44 +52,13 @@ export function showResults(_peopleData) {
 
         $("#tableBody").append(file);
       }
-
-      // for (var i = 0; i < results.length; i++) {
-      //   var elementTraduced = results[i];
-      //   traduced(elementTraduced);
-      //   console.log(elementTraduced.eye_color);
-
-      //   let position = $("<td>").text(results[i].url.slice(28, -1));
-      //   let name = $("<td>").text(results[i].name);
-      //   let gender = $("<td>").text(results[i].gender);
-      //   let height = $("<td>").text(results[i].height);
-      //   let mass = $("<td>").text(results[i].mass);
-      //   let eye_color = $("<td>").text(results[i].eye_color);
-      //   let buttonSave = $("<td>").append(
-      //     $("<button>")
-      //       .text("guardar")
-      //       .attr("class", "saveChar")
-      //   );
-
-      //   let file = $("<tr>").append(
-      //     position,
-      //     name,
-      //     gender,
-      //     height,
-      //     mass,
-      //     eye_color,
-      //     buttonSave
-      //   );
-
-      //   $("#tableBody").append(file);
     }
   }
   saved();
   showMore(_peopleData);
 }
 
-export function showError(_error) {
-  console.log(_error);
-}
+export function showError(_error) {}
 
 function peopleController() {
   console.log("Se cargo la people");

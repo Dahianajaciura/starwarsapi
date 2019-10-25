@@ -6,20 +6,20 @@ export default function saved() {
       .parent()
       .prev()
       .text();
-    console.log(eye_color);
+
     let mass = $(this)
       .parent()
       .prev()
       .prev()
       .text();
-    console.log(mass);
+
     let height = $(this)
       .parent()
       .prev()
       .prev()
       .prev()
       .text();
-    console.log(height);
+
     let gender = $(this)
       .parent()
       .prev()
@@ -27,7 +27,7 @@ export default function saved() {
       .prev()
       .prev()
       .text();
-    console.log(gender);
+
     let name = $(this)
       .parent()
       .prev()
@@ -36,7 +36,7 @@ export default function saved() {
       .prev()
       .prev()
       .text();
-    console.log(name);
+
     let position = $(this)
       .parent()
       .prev()
@@ -46,7 +46,6 @@ export default function saved() {
       .prev()
       .prev()
       .text();
-    console.log(position);
 
     var character = {
       id: position,
@@ -58,11 +57,9 @@ export default function saved() {
     };
 
     if (getLocalList("charactersRecived")) {
-      console.log("si");
       var listSaveChar = getLocalList("charactersRecived");
       listSaveChar.push(character);
     } else {
-      console.log("no");
       var listSaveChar = [];
       listSaveChar.push(character);
     }
