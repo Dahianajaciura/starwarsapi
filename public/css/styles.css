@@ -5,7 +5,6 @@
 }
 
 * {
-
   font-family: starwars;
 }
 
@@ -34,3 +33,31 @@ body {
   margin: 3%;
 }
 
+.logo-img img {
+  height: 600px;
+}
+
+.bienvenido {
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  padding-top: 10%;
+}
+.jaciura a {
+  color: yellow;
+  font-size: 20px;
+}
+.jaciura a:hover {
+  color: white;
+  font-size: 20px;
+}
+.jaciura {
+  text-align: center;
+}
+.tablacontenedor{
+  padding: 5%;
+}
+
+button .saveChar{
+  background-color:red ;
+}
